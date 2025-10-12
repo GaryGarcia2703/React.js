@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
+const conteiner = document.querySelector("div#conteiner")
+const root = createRoot(conteiner)
+
+const elementos = (
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <h1>Olá</h1>
+    <button>clicka aqui para dar like</button>
+    <button>aqui para dar dislike</button>
+  </StrictMode>
+  
+)
+
+root.render(
+  elementos
 )
