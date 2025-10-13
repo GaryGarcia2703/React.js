@@ -1,11 +1,16 @@
+import './App.css'
 export function App() {
     return (
-        <article>
-            <header>
-                <img src="img/mii.png" alt="mii avatar"/>
-                <div>
+        <article className='tw-followCard'>
+            <header className='tw-followCard-header'>
+                <img
+                className='tw=followCard-avatar' 
+                src="img/mii.png" 
+                alt="mii avatar"/>
+
+                <div className='tw-followCard-info'>
                     <strong>Miguel Ángel</strong>
-                    <span>@midudev</span>
+                    <span className='tw-folloCard-infoUsername'>@midudev</span>
                 </div>
             </header>
 
