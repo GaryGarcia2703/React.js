@@ -5,22 +5,22 @@
     font-size: .8rem;
 }
 
-article header { 
+.tw-followCard-header { 
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-article header div {
+.tw-followCard-info{
     display: flex;
     flex-direction: column;
 }
 
-article header span {
+.tw-folloCard-infoUsername {
     opacity: .6;
 }
 
-article img {
+.tw-followCard-avatar {
     width: 48px;
     height: 48px;
     border-radius: 1000px;
