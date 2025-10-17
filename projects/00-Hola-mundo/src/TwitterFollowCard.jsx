@@ -1,5 +1,5 @@
 export function TwitterFollowcard ({userName , name ,isFollowing}) {
-
+console.log(isFollowing)
     let imgSrc = ""
     if (userName === "gary_xdinzho2") {
         imgSrc = "img/Silver Wallpaper.jpeg"
