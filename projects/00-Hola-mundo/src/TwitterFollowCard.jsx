@@ -1,5 +1,5 @@
-export function TwitterFollowcard ({userName , name ,isFollowing}) {
-console.log(isFollowing)
+export function TwitterFollowcard ({formatUsername, userName , name ,isFollowing}) {
+
     let imgSrc = ""
     if (userName === "gary_xdinzho2") {
         imgSrc = "img/Silver Wallpaper.jpeg"
@@ -23,7 +23,7 @@ return (
                 </strong>
 
                 <span className='tw-folloCard-infoUsername'>
-                    {userName}
+                    {formatUsername(userName)}
                 </span>
             </div>
         </header>
