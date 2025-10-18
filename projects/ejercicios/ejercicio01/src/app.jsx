@@ -1,7 +1,13 @@
 export function App() {
 
-    const btn = document.querySelector("button#soma")
+    const btnSoma = document.querySelector("button#soma")
     var numeros = 0
+    function somar() {
+        numeros++
+    }
+    btnSoma.addEventListener("click" , somar())
+
+    
     var texto = `total números: ${numeros}`
 
     return (
