@@ -1,18 +1,22 @@
+import { useState } from "react"
+
 export function App() {
+  // Estado que lembra o número entre renderizações
+  const [numeros, setNumeros] = useState(0)
 
-    const btnSoma = document.querySelector("button#soma")
-    var numeros = 0
-    function somar() {
-        numeros++
-    }
-    btnSoma.addEventListener("click" , somar())
+  // Função que aumenta o número
+  function Somar() {
+    setNumeros(numeros + 1)
+  }
 
-    
-    var texto = `total números: ${numeros}`
+  // JSX é a “versão React” do botão e do texto
+  const btntxt = <button onClick={Somar}>Somar + 1</button>
+  const texto = `Total números: ${numeros}`
 
-    return (
-        <div>
-            <p>{texto}</p>
-        </div>
-    )
+  return (
+    <div>
+      {btntxt}
+      <p>{texto}</p>
+    </div>
+  )
 }
