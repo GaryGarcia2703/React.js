@@ -1,5 +1,6 @@
 export function Frutas() {
     const ListaFrutas = ["Manzana" , "Patilla" , "Cambur" , "Fresa"]
+        
     return (
         <div>
         <h1>Lista de Frutas:</h1>
