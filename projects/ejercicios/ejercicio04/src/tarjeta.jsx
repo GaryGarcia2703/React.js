@@ -1,12 +1,14 @@
 import { App } from "./App"
-export function Tarjeta({nombre , titulo , descipcion}) {
+export function Tarjeta({nombre , titulo , descipcion , img}) {
     return (
-        <>
-        <h1>{nombre} </h1>
+        <div className="Conteiner">
+            <h1>{nombre} </h1>
 
-        <h2>{titulo} </h2>
-        
-        <p>{descipcion} </p>
-        </>
+            <h2>{titulo} </h2>
+            
+            <img src={img} alt="imagem de un erizo" />
+
+            <p>{descipcion} </p>
+        </div>
     )
 }
