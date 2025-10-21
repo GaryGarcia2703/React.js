@@ -1,14 +1,21 @@
 import { App } from "./App"
-export function Tarjeta({nombre , titulo , descipcion , img}) {
+import './App.css'
+
+export function Tarjeta({nombre , titulo , descripcion , img}) {
+
     return (
         <div className="Conteiner">
-            <h1>{nombre} </h1>
 
-            <h2>{titulo} </h2>
-            
-            <img src={img} alt="imagem de un erizo" />
+            <div id={nombre}
 
-            <p>{descipcion} </p>
+            style={{backgroundImage: `url(${img})`}}
+            >
+                <h1>{nombre}</h1>
+            </div>
+
+            <h2>{titulo}</h2>
+
+            <p>{descripcion} </p>
         </div>
     )
 }
