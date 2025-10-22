@@ -1,21 +1,25 @@
-import { App } from "./App"
 import './App.css'
+export function Tarjeta({ nombre, titulo, descripcion, img , icon}) {
 
-export function Tarjeta({nombre , titulo , descripcion , img}) {
+  return (
 
-    return (
-        <div className="Conteiner">
-
-            <div id={nombre}
-
-            style={{backgroundImage: `url(${img})`}}
+    <div className="Conteiner">
+      <div  className="tarjeta"
+            style={{
+            backgroundImage: `url(${img})`,
+            }}
             >
-                <h1>{nombre}</h1>
-            </div>
 
-            <h2>{titulo}</h2>
-
-            <p>{descripcion} </p>
+            <h1>{titulo}</h1>
         </div>
-    )
+
+        <h2>
+            {nombre}
+
+            <img className='icon' src={icon} alt="icon de sonic , shadow silver " />
+        </h2>
+
+      <p>{descripcion}</p>
+    </div>
+  )
 }

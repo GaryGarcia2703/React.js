@@ -2,22 +2,51 @@
 .Conteiner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap ;
+  justify-content: center;   /* centra vertical */
+  align-items: center;       /* centra horizontal */
+  min-height: 100vh;         /* ocupa toda la altura de la pantalla */
   gap: 20px;
-  min-height: 100vh;  /* ocupa toda la pantalla */
 }
 
 /* Estilos de la tarjeta */
 .tarjeta {
-  width: 700px;
-  height: 700px;
+  width: 1000px;             /* más ancha → rectangular */
+  height: 500px;             /* más baja */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;   /* centra el texto horizontalmente */
+  align-items: center; /* centra el texto verticalmente */
+
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   color: white;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  font-size: 45px;
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 15px;
+  border-radius: 10px;  
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 35px;
 }
