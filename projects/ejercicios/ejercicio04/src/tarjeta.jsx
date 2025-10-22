@@ -1,5 +1,5 @@
 import './App.css'
-export function Tarjeta({ nombre, titulo, descripcion, img , icon}) {
+export function Tarjeta({nombre, titulo, descripcion, img, icon, imgGameplay, imgGameplay1, imgGameplay2}) {
 
   return (
 
@@ -19,7 +19,25 @@ export function Tarjeta({ nombre, titulo, descripcion, img , icon}) {
             <img className='icon' src={icon} alt="icon de sonic , shadow silver " />
         </h2>
 
-      <p>{descripcion}</p>
+        <div className='flex'>
+            <div className='gameplay'>
+                <img src={imgGameplay} alt="sonic" />
+                <p>{descripcion}</p>
+            </div>
+
+            <div className='gameplay'>
+                <img src={imgGameplay1} alt="silver" />
+                <p>{descripcion}</p>
+            </div>
+
+
+            <div className='gameplay'>
+                <img src={imgGameplay2} alt="shadow" />
+                <p>{descripcion}</p>
+            </div>
+        </div>
+
+        <p>{descripcion}</p>
     </div>
   )
 }
