@@ -1,6 +1,7 @@
 import { Tarjeta } from "./tarjeta"
 
 export function App() {
+  const titulosJuegos = ["Sonic Unleashed", "Sonic Colours", "Sonic Adventure 2"]
   return(
   <>
     <Tarjeta nombre={"Sonic"} 
@@ -9,10 +10,32 @@ export function App() {
 
     img={"img/sonic-nuh.gif"} 
     icon={"img/sonic-3.png"}  
-    imgGameplay={"img/shadow-gameplay.jpeg"} 
-    imgGameplay1={"img/silver-gameplay.png"}
+    imgGameplay={"img/sweet-mountain-p.jpeg"} 
+    imgGameplay1={"img/sonic-unleashed-p.jpg"}
     imgGameplay2={"img/sonic-gameplay.png"}
+
+    juegoDescripcion1={"In Sonic Colours, Sonic ventures into space to stop Dr. Eggman’s interstellar amusement park and free the alien Wisps from captivity. Armed with their incredible energy, Sonic gains new abilities that push his speed and creativity to new limits. This adventure highlights his optimism and wit — even in the darkest corners of space, Sonic’s confidence and compassion shine brighter than any star."}
+
+    juegoDescripcion2={"In Sonic Unleashed, Sonic faces one of his greatest challenges yet — himself. After being transformed into a “Werehog” by Dark Gaia’s power, Sonic is forced to confront the darkness within while racing to restore the shattered world. By day, he blazes through continents at supersonic speed, and by night, he fights with raw strength and determination. This journey reveals not just Sonic’s unmatched speed, but his heart — proving that even when the world is broken, his spirit never slows down."}
+
+    juegoDescripcion3={"Sonic Adventure 2 tells the story of two opposing forces — Sonic and Shadow — bound by fate and a common desire for justice. Chased by the military and misunderstood by the world, Sonic stands tall, proving that heroes are defined not by how they’re seen, but by what they stand for. His rivalry with Shadow pushes him to his limits, revealing his true strength: a hero who fights not for fame or power, but for freedom, friendship, and the hope of a better tomorrow."}
+
+    titulosJuegos={titulosJuegos}
     />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <Tarjeta nombre={"Shadow"} 
     titulo={"The ultimate life form"} 

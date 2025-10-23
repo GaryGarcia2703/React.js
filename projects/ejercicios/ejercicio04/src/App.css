@@ -35,25 +35,6 @@ h1 {
   border-radius: 10px;  
 }
 
-img {
-  border-radius: 10px;
-}
-
-.flex{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.gameplay { 
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px;
-
-}
-
 h2 {
   font-size: 50px;
 }
@@ -69,3 +50,26 @@ p {
   font-size: 20px;
   line-height: 35px;
 }
+
+img {
+  border-radius: 10px;
+}
+
+.gameplayFlex{
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.gameplayImg { 
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+
+
+
