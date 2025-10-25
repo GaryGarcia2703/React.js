@@ -59,6 +59,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 120px;
+  margin-bottom: 400px;
 }
 
 .gameplayImg { 
@@ -67,7 +68,6 @@ img {
   align-items: center;
   flex-direction: row;
   gap: 20px;
-
 }
 
 
