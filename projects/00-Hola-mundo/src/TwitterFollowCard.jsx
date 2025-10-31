@@ -1,3 +1,4 @@
+import { useState } from "react"
 export function TwitterFollowcard ({formatUsername, userName , name ,isFollowing}) {
 
     let imgSrc = ""
@@ -9,13 +10,27 @@ export function TwitterFollowcard ({formatUsername, userName , name ,isFollowing
         imgSrc = "img/fa-icon.png"
     }
 
+    const state = useState(false)
+    const isFollowing = state[0]
+    const setIsFollowing = state[1]
+
+    const text = isFollowing 
+    ? "Siguiendo" 
+    : "Seguir"
+
+    const buttonClassName = isFollowing
+    ? "tw-followCard-button is-following"
+    : "tw-followCard-button"
+
 return (
     <article className='tw-followCard'>
         <header className='tw-followCard-header'>
+
             <img
             className='tw-followCard-avatar' 
             src={imgSrc} 
-            alt="mii avatar"/>
+            alt="mii avatar"
+            />
 
             <div className='tw-followCard-info'>
                 <strong>
@@ -29,7 +44,9 @@ return (
         </header>
 
         <aside>
-            <button className='tw-followCard-button'>Seguir</button>
+            <button className={buttonClassName}>
+                {text}
+            </button>
         </aside>
     </article>
 )
