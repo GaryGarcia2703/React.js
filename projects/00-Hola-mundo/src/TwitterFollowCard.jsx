@@ -1,53 +1,47 @@
 import { useState } from "react"
-export function TwitterFollowcard ({formatUsername, userName , name ,isFollowing}) {
 
-    let imgSrc = ""
-    if (userName === "gary_xdinzho2") {
-        imgSrc = "img/Silver Wallpaper.jpeg"
-    } else if (userName === "jonathandavis") {
-        imgSrc = "img/mii.png"
-    } else if (userName === "someone") {
-        imgSrc = "img/fa-icon.png"
-    }
+export function TwitterFollowcard({ formatUsername, userName, name, isFollowing }) {
+  
+  const images = {
+    gary_xdinzho2: "img/Silver Wallpaper.jpeg",
+    jonathandavis: "img/mii.png",
+    someone: "img/fa-icon.png"
+  }
 
-    const state = useState(false)
-    const isFollowing = state[0]
-    const setIsFollowing = state[1]
+  const imgSrc = images[userName] || "img/default.png"
 
-    const text = isFollowing 
-    ? "Siguiendo" 
-    : "Seguir"
+  const [followState, setFollowState] = useState(isFollowing)
 
-    const buttonClassName = isFollowing
+  const text = followState ? "Siguiendo" : "Seguir"
+  const buttonClassName = followState
     ? "tw-followCard-button is-following"
     : "tw-followCard-button"
 
-return (
-    <article className='tw-followCard'>
-        <header className='tw-followCard-header'>
+  const handleClick = () => {
+    setFollowState(!followState)
+  }
 
-            <img
-            className='tw-followCard-avatar' 
-            src={imgSrc} 
-            alt="mii avatar"
-            />
+  return (
+    <article className="tw-followCard">
+      <header className="tw-followCard-header">
+        <img
+          className="tw-followCard-avatar"
+          src={imgSrc}
+          alt="avatar"
+        />
+        <div className="tw-followCard-info">
+          <strong>{name}</strong>
+          <span className="tw-followCard-infoUsername">
+            {formatUsername(userName)}
+          </span>
+        </div>
+      </header>
 
-            <div className='tw-followCard-info'>
-                <strong>
-                    {name}
-                </strong>
-
-                <span className='tw-folloCard-infoUsername'>
-                    {formatUsername(userName)}
-                </span>
-            </div>
-        </header>
-
-        <aside>
-            <button className={buttonClassName}>
-                {text}
-            </button>
-        </aside>
+      <aside>
+        <button className={buttonClassName} onClick={handleClick}>
+          {text}
+        </button>
+      </aside>
     </article>
-)
+  )
 }
