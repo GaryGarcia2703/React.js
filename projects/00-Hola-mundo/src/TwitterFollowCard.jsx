@@ -5,7 +5,8 @@ export function TwitterFollowcard({ formatUsername, userName, name, isFollowing 
   const images = {
     gary_xdinzho2: "img/Silver Wallpaper.jpeg",
     jonathandavis: "img/mii.png",
-    someone: "img/fa-icon.png"
+    someone: "img/fa-icon.png",
+    ThisHumpsTheyWillNotHeal: "img/Chester.jpeg"
   }
 
   const imgSrc = images[userName] || "img/default.png"
@@ -39,7 +40,8 @@ export function TwitterFollowcard({ formatUsername, userName, name, isFollowing 
 
       <aside>
         <button className={buttonClassName} onClick={handleClick}>
-          {text}
+          <span className="tw-followCard-text">{text}</span>
+          <span className="tw-followCard-stopFollow">Dejar De Seguir</span>
         </button>
       </aside>
     </article>

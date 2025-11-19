@@ -24,6 +24,12 @@ export function App() {
         isFollowing={false} 
         userName="someone" 
         name="FrutigerPlace" />
+
+        <TwitterFollowcard 
+        formatUsername={formatUsername}
+        isFollowing={false} 
+        userName="ThisHumpsTheyWillNotHeal" 
+        name="LinkinParkListener729" />
     </div>
 )
     
