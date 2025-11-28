@@ -8,7 +8,7 @@ export const sonic = {
     imagenTarjeta: "img/sonic-nuh.gif",
     icon: "img/sonic-3.png",
     imgGameplay:"img/sweet-mountain-p.jpeg", 
-    imgGameplay1:"img/sonic-unleashed-p.jpg",
+    imgGameplay1:"img/sonic.jpg",
     imgGameplay2:"img/sonic-gameplay.png",
 
     juegoDescripcion1:"In Sonic Colours, Sonic ventures into space to stop Dr. Eggman’s interstellar amusement park and free the alien Wisps from captivity. Armed with their incredible energy, Sonic gains new abilities that push his speed and creativity to new limits. This adventure highlights his optimism and wit — even in the darkest corners of space, Sonic’s confidence and compassion shine brighter than any star.",
@@ -25,7 +25,7 @@ export const sonic = {
 
     titulosJuegos: ["Adventure 2", "Generations", "Shadow 2005"],
 
-    imagenTarjeta: "img/shadowpeque.png",
+    imagenTarjeta: "img/shadow.png",
     icon: "img/shadow-ico.png",
     imgGameplay:"img/RadicalHighway2.png", 
     imgGameplay1:"img/shadow-gameplay.jpeg",
@@ -52,7 +52,7 @@ export const silver = {
     icon: "img/silver-3.png",
     imgGameplay:"img/silver_06-p.webp", 
     imgGameplay1:"img/silver-gameplay.png",
-    imgGameplay2:"img/silver_blaze-p.png",
+    imgGameplay2:"img/silver.png",
 
     juegoDescripcion1:"In Sonic (2006), Silver makes his first, desperate jump through time from a ruined future. Naive but fiercely determined, he arrives believing Sonic is the cause of the apocalypse and confronts him with raw psychokinetic power. Throughout the story Silver’s convictions are tested as truths are revealed: he’s not simply a villain, but a tragic guardian shaped by loss and manipulation, willing to fight anyone who stands between him and the hope of a saved tomorrow.",
 
