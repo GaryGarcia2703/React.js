@@ -2,27 +2,34 @@ import { useState } from 'react'
 import '../public/app.css'
 
 export function App() {
-  const [color, setColor] = useState('Azul')
+  const [accion, setAccion] = useState('Sumar')
 
-  var buttonClassName = color
-  if (color == 'Azul') {
+  {/* condicional para cambiar el nombre de la clase */}
+  var buttonClassName = accion
+  if (accion == 'Sumar') {
     buttonClassName = "button-azul"
-  }
-  else {
+  } else {
     buttonClassName = "button-rojo"
   } 
 
+  {/* Función para cambiar el estado del botón */}  
   const cambioColor = () => {
-    if (color === 'Azul') {
-      setColor('Rojo')
+    if (accion === 'Sumar') {
+      setAccion('Restar')
     } else {
-      setColor('Azul')
+      setAccion('Sumar')
     }
   }
+  ///////////////////////////////////////////////
+  {/* Retornando elementos via react.js */}  
+
+  {/* en la versión 0.0.2 desarrollare logica para verificar el estado del botón, segun esto sumar o resto número esnteros.... */}  
 
   return (
-    <button className={buttonClassName} onClick={cambioColor}>
-      Hola ({color})
-    </button>
+    <div className='conteiner'>
+      <button className={buttonClassName} onClick={cambioColor}>
+        ({accion})
+      </button>
+    </div>
   )
 }
